@@ -18,8 +18,5 @@ get '/coffee' do
 end
 
 get '/cat' do
-  '<img style = "border: dashed red;"
-   src = "https://i.imgur.com/jFaSxym.png"
-   alt="Photo of cute kitten"
-  />'
+  erb(:index)
 end
