@@ -17,6 +17,13 @@ get '/coffee' do
   "Im buzzing"
 end
 
-get '/cat' do
+get '/random-cat' do
+  @names = ["Amigo", "Misty", "Almond"].sample 
+  erb(:index)
+end
+
+get '/named-cat' do
+  @age = params[:age]
+  @names = params[:name] 
   erb(:index)
 end
